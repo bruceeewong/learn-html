@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <style>
+    table th,
+    table td {
+      padding: 10px;
+    }
+    table.border,
+    table.border th,
+    table.border td {
+      border: 1px solid black;
+    }
+    table.border-collapse {
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <h2>Basic Table</h2>
+    <table>
+      <tr>
+        <th>th1</th>
+        <th>th2</th>
+        <th>th3</th>
+      </tr>
+      <tr>
+        <td>value1</td>
+        <td>value2</td>
+        <td>value3</td>
+      </tr>
+      <tr>
+        <td>value4</td>
+        <td>value5</td>
+        <td>value6</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Border Table</h2>
+    <table class="border">
+      <tr>
+        <th>th1</th>
+        <th>th2</th>
+        <th>th3</th>
+      </tr>
+      <tr>
+        <td>value1</td>
+        <td>value2</td>
+        <td>value3</td>
+      </tr>
+      <tr>
+        <td>value4</td>
+        <td>value5</td>
+        <td>value6</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Collapsed Borders</h2>
+    <table class="border border-collapse">
+      <tr>
+        <th>th1</th>
+        <th>th2</th>
+        <th>th3</th>
+      </tr>
+      <tr>
+        <td>value1</td>
+        <td>value2</td>
+        <td>value3</td>
+      </tr>
+      <tr>
+        <td>value4</td>
+        <td>value5</td>
+        <td>value6</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Colspan Rowspan</h2>
+    <table class="border">
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td>55577854</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Caption</h2>
+    <table class="border">
+      <caption>
+        Table Caption
+      </caption>
+      <tr>
+        <th>th1</th>
+        <th>th2</th>
+        <th>th3</th>
+      </tr>
+      <tr>
+        <td>value1</td>
+        <td>value2</td>
+        <td>value3</td>
+      </tr>
+      <tr>
+        <td>value4</td>
+        <td>value5</td>
+        <td>value6</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Semantic</h2>
+    <table class="border">
+      <caption>
+        Table Caption
+      </caption>
+      <thead>
+        <th>th1</th>
+        <th>th2</th>
+        <th>th3</th>
+      </thead>
+      <tbody>
+        <td>value1</td>
+        <td>value2</td>
+        <td>value3</td>
+      </tbody>
+      <tfoot>
+        <td>foot1</td>
+        <td>foot2</td>
+        <td>foot3</td>
+      </tfoot>
+    </table>
+
+    <hr />
+  </body>
+</html>
